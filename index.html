@@ -3,43 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="import" href="bower/guara-elements/guara-elements.html">
-		<style>
-			.demo { 
-				width: 80%;
-				border: 1px solid #eee;
-				border-radius: 6px;
-				margin: 20px auto;
-				padding: 20px;			
-			}
-
-			.demo h1 {
-				margin-bottom: 20px;			
-			}
-		</style>
+		<link rel="import" href="bower/g-table/g-table-sample.html">
+		<link rel="stylesheet" href="app.css">
 	</head>
 	<body unresolved>
 		<div class="demo">
 			<h1>g-table</h1>
-			<g-table enableRowSelection="true" title="Sample Table" lineCount="true"></g-table>
+			<g-table-sample></g-table-sample>
 		<div>
 		<script>
-			window.addEventListener('polymer-ready', function(e) {
-				var table = document.querySelector('g-table');
-				table.schema = {
-					id		: {column: {length: '10%', name: 'id',		title: 'ID'}},
-					name    : {column: {length: '80%', name: 'name', 	title: 'NAME'}},
-				};
-				
-				for(var i = 1 ; i <= 100 ; i++)
-				{
-					table.appendRow({
-						"id"	: i,
-						"name"	: 'item ' + i,	
-					});
-				}
-
-				table.show();
-			});
+			window.addEventListener('polymer-ready', function(e) {});
 		</script>
 	</body>
 </html>

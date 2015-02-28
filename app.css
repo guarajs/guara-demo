@@ -1,0 +1,12 @@
+.demo { 
+	width: 80%;
+	border: 1px solid #eee;
+	border-radius: 6px;
+	margin: 20px auto;
+	padding: 20px;			
+}
+
+.demo h1 {
+	margin-bottom: 20px;			
+}
+
